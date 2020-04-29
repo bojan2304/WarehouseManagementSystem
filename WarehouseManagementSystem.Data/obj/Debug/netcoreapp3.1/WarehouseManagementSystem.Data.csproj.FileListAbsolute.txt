@@ -1,0 +1,9 @@
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem.Data\bin\Debug\netcoreapp3.1\WarehouseManagementSystem.Data.deps.json
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem.Data\bin\Debug\netcoreapp3.1\WarehouseManagementSystem.Data.dll
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem.Data\obj\Debug\netcoreapp3.1\WarehouseManagementSystem.Data.AssemblyInfoInputs.cache
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem.Data\obj\Debug\netcoreapp3.1\WarehouseManagementSystem.Data.AssemblyInfo.cs
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem.Data\bin\Debug\netcoreapp3.1\WarehouseManagementSystem.Data.runtimeconfig.json
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem.Data\bin\Debug\netcoreapp3.1\WarehouseManagementSystem.Data.runtimeconfig.dev.json
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem.Data\bin\Debug\netcoreapp3.1\WarehouseManagementSystem.Data.pdb
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem.Data\obj\Debug\netcoreapp3.1\WarehouseManagementSystem.Data.dll
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem.Data\obj\Debug\netcoreapp3.1\WarehouseManagementSystem.Data.pdb
