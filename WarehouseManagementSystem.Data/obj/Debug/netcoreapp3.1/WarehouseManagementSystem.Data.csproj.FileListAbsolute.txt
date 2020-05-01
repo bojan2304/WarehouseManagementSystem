@@ -7,3 +7,4 @@ C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem.Data\bin
 C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem.Data\bin\Debug\netcoreapp3.1\WarehouseManagementSystem.Data.pdb
 C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem.Data\obj\Debug\netcoreapp3.1\WarehouseManagementSystem.Data.dll
 C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem.Data\obj\Debug\netcoreapp3.1\WarehouseManagementSystem.Data.pdb
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem.Data\obj\Debug\netcoreapp3.1\WarehouseManagementSystem.Data.csprojAssemblyReference.cache

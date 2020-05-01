@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManagementSystem", "WarehouseManagementSystem\WarehouseManagementSystem.csproj", "{097E8A8D-070B-4B02-AA0C-D7D58B7F49E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseManagementSystem", "WarehouseManagementSystem\WarehouseManagementSystem.csproj", "{097E8A8D-070B-4B02-AA0C-D7D58B7F49E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManagementSystem.Data", "WarehouseManagementSystem.Data\WarehouseManagementSystem.Data.csproj", "{5AB58989-3289-4DFA-AD40-40F78BD48B30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseManagementSystem.Data", "WarehouseManagementSystem.Data\WarehouseManagementSystem.Data.csproj", "{5AB58989-3289-4DFA-AD40-40F78BD48B30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManagementSystem.Services", "WarehouseManagementSystem.Services\WarehouseManagementSystem.Services.csproj", "{78B63B00-9C8C-4D7C-A3EA-A1D9699F1607}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5AB58989-3289-4DFA-AD40-40F78BD48B30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AB58989-3289-4DFA-AD40-40F78BD48B30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AB58989-3289-4DFA-AD40-40F78BD48B30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78B63B00-9C8C-4D7C-A3EA-A1D9699F1607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78B63B00-9C8C-4D7C-A3EA-A1D9699F1607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78B63B00-9C8C-4D7C-A3EA-A1D9699F1607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78B63B00-9C8C-4D7C-A3EA-A1D9699F1607}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

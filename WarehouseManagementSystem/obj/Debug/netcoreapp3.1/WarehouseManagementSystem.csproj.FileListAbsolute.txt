@@ -66,3 +66,5 @@ C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debu
 C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\WarehouseManagementSystem.pdb
 C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\WarehouseManagementSystem.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\bin\Debug\netcoreapp3.1\WarehouseManagementSystem.Services.dll
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\bin\Debug\netcoreapp3.1\WarehouseManagementSystem.Services.pdb
