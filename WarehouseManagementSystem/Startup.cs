@@ -23,7 +23,16 @@ namespace WarehouseManagementSystem
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
             services.AddScoped<IWarehouseAssetService, WarehouseAssetService>();
+            services.AddScoped<ICheckoutService, CheckoutService>();
+            services.AddScoped<IToolService, ToolService>();
+            services.AddScoped<IWarehouseBranchService, WarehouseBranchService>();
+            services.AddScoped<IWarehouseEmployeeCardService, WarehouseEmployeeCardService>();
+            services.AddScoped<IStatusService, StatusService>();
+            services.AddScoped<IMaterialService, MaterialService>();
+            services.AddScoped<IEmployeeService, EmployeeService>();
+
             services.AddDbContext<WmsContext>(options 
                 => options.UseSqlServer(Configuration.GetConnectionString("WmsDatabase")));
         }
