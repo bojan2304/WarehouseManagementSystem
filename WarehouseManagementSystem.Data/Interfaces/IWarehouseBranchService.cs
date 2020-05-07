@@ -9,6 +9,7 @@ namespace WarehouseManagementSystem.Data.Interfaces
         IEnumerable<Employee> GetEmployees(int id);
         IEnumerable<WarehouseAsset> GetAssets(int id);
         WarehouseBranch GetById(int id);
+        WarehouseBranch GetByName(string name);
         void Add(WarehouseBranch branch);
         int GetAssetCount(int id);
         int GetEmployeeCount(int id);

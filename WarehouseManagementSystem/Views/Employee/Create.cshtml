@@ -1,0 +1,41 @@
+﻿@model EmployeeViewModel
+
+<h1 class="my-5 text-center">Register new Employee</h1>
+
+<hr />
+<div class="row justify-content-center">
+    <div class="col-md-4 shadow p-3 mb-5 bg-white rounded mt-5">
+        <form asp-action="Create" asp-controller="Employee" class="mt-5">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" required pattern="^(?=.{1,40}$)[a-zA-Z]+(?:[-' ][a-zA-Z]+)*$" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" required pattern="^(?=.{1,40}$)[a-zA-Z]+(?:[-' ][a-zA-Z]+)*$" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" required />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label"></label>
+                <input asp-for="PhoneNumber" class="form-control" required />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HomeWarehouse" class="control-label"></label>
+                <input asp-for="HomeWarehouse" class="form-control" required/>
+                <span asp-validation-for="HomeWarehouse" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-5">
+                <input type="submit" value="Register" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-primary">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using WarehouseManagementSystem.Data;
@@ -46,6 +45,11 @@ namespace WarehouseManagementSystem.Services.Providers
         public WarehouseBranch GetById(int id)
         {
             return GetAll().FirstOrDefault(b => b.Id == id);
+        }
+
+        public WarehouseBranch GetByName(string name)
+        {
+            return GetAll().FirstOrDefault(b => b.Name == name);
         }
 
         public int GetEmployeeCount(int id)

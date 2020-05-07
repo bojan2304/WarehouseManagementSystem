@@ -8,6 +8,8 @@ namespace WarehouseManagementSystem.Data.Interfaces
         IEnumerable<Employee> GetAll();
         Employee GetById(int id);
         void Add(Employee employee);
+        void Edit(Employee employee);
+        void Delete(int id);
         IEnumerable<CheckoutHistory> GetCheckoutHistory(int id);
         IEnumerable<Checkout> GetCheckouts(int id);
     }

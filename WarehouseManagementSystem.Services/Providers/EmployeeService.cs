@@ -22,6 +22,13 @@ namespace WarehouseManagementSystem.Services.Providers
             Save();
         }
 
+        public void Delete(int id)
+        {
+            var employee = GetById(id);
+            _context.Remove(employee);
+            Save();
+        }
+
         public IEnumerable<Employee> GetAll()
         {
             return _context.Employees.Include(a => a.WarehouseEmployeeCard).Include(a => a.HomeWarehouseBranch);
@@ -30,6 +37,11 @@ namespace WarehouseManagementSystem.Services.Providers
         public Employee GetById(int id)
         {
             return GetAll().FirstOrDefault(e => e.Id == id);
+        }
+        public void Edit(Employee employee)
+        {
+            _context.Update(employee);
+            Save();
         }
 
         public IEnumerable<CheckoutHistory> GetCheckoutHistory(int id)
