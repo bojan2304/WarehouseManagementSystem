@@ -3,6 +3,37 @@
 <h2 class="mt-5 text-center">Employee Detail</h2>
 
 <div class="row mt-5 shadow p-3 mb-5 bg-white rounded table-responsive-lg table-responsive-md table-responsive-sm">
+    <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+        <h4>Assets Currently Checked Out</h4>
+        <div style="max-height: 500px;" class="pre-scrollable">
+            @if (@Model.AssetsCheckedOut.Any())
+            {
+                @foreach (var checkout in @Model.AssetsCheckedOut)
+                {
+                    <div>
+                        <div class="card border-primary mb-3 mr-3">
+                            <div class="card-header">
+                                @checkout.WarehouseAsset.Name - (Warehouse Asset ID: @checkout.WarehouseAsset.Id)
+                            </div>
+                            <div class="card-body">
+                                <h6>
+                                    Since: @checkout.Since
+                                </h6>
+                                <h6>
+                                    Due: @checkout.Until
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div>No items currently checked out.</div>
+
+            }
+        </div>
+    </div>
     <div class="col-lg-6 col-md-12 col-sm-12">
         <table class="table table-hover table-sm table-striped table-borderless mt-5">
             <tr>
@@ -35,39 +66,11 @@
             </tr>
             <tr>
                 <th class="col-wrap-text">@Html.DisplayNameFor(model => model.WarehouseEmployeeCardId)</th>
-                <td class="col-wrap-text">@Html.DisplayFor(model => model.WarehouseEmployeeCardId)</td> 
+                <td class="col-wrap-text">@Html.DisplayFor(model => model.WarehouseEmployeeCardId)</td>
             </tr>
         </table>
     </div>
-    <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
-        <h4>Assets Currently Checked Out</h4>
-        <div style="max-height: 200px;" class="pre-scrollable">
-            @if (@Model.AssetsCheckedOut.Any())
-            {
-                @foreach (var checkout in @Model.AssetsCheckedOut)
-                {
-                    <div>
-                        <div class="card border-primary mb-3 mr-3">
-                            <div class="card-header">
-                                @checkout.WarehouseAsset.Name - (Warehouse Asset ID: @checkout.WarehouseAsset.Id)
-                            </div>
-                            <div class="card-body">
-                                <h6>
-                                    Since: @checkout.Since
-                                </h6>
-                                <h6>
-                                    Due: @checkout.Until
-                                </h6>
-                            </div>
-                        </div>
-                    </div>
-                }
-            }
-            else
-            {
-                <div>No items currently checked out.</div>
-
-            }
-                </div>
-    </div>
+</div>
+<div class="col-md-2">
+    <a asp-action="Index" class="btn btn-primary">Back to List</a>
 </div>

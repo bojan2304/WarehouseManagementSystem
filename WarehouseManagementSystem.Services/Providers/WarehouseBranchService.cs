@@ -22,6 +22,19 @@ namespace WarehouseManagementSystem.Services.Providers
             Save();
         }
 
+        public void Delete(int id)
+        {
+            var branch = GetById(id);
+            _context.Remove(branch);
+            Save();
+        }
+
+        public void Edit(WarehouseBranch branch)
+        {
+            _context.Update(branch);
+            Save();
+        }
+
         public IEnumerable<WarehouseBranch> GetAll()
         {
             return _context.WarehouseBranches.Include(a => a.Employees).Include(a => a.WarehouseAssets);

@@ -11,6 +11,8 @@ namespace WarehouseManagementSystem.Data.Interfaces
         WarehouseBranch GetById(int id);
         WarehouseBranch GetByName(string name);
         void Add(WarehouseBranch branch);
+        void Edit(WarehouseBranch branch);
+        void Delete(int id);
         int GetAssetCount(int id);
         int GetEmployeeCount(int id);
         decimal GetAssetsValue(int id);

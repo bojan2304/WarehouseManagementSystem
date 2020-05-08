@@ -97,10 +97,10 @@ namespace WarehouseManagementSystem.Controllers
             var employee = _employeeService.GetById(id);
             var model = new EmployeeViewModel
             {
-                FirstName = employee.FirstName ?? "No First Name Provided",
-                LastName = employee.LastName ?? "No Last Name Provided",
-                Address = employee.Address ?? "No Address Provided",
-                PhoneNumber = employee.PhoneNumber ?? "No Phone Provided",
+                FirstName = employee.FirstName,
+                LastName = employee.LastName,
+                Address = employee.Address,
+                PhoneNumber = employee.PhoneNumber,
                 HomeWarehouse = employee.HomeWarehouseBranch?.Name
             };
             return View(model);

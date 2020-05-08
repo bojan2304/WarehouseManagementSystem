@@ -13,7 +13,6 @@ C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debu
 C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\WarehouseManagementSystem.TagHelpers.output.cache
 C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\WarehouseManagementSystem.RazorCoreGenerate.cache
 C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -145,3 +144,7 @@ C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debu
 C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Detail.cshtml.g.cs
 C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Create.cshtml.g.cs
 C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Edit.cshtml.g.cs
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\WarehouseBranch\Index.cshtml.g.cs
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\WarehouseBranch\Detail.cshtml.g.cs
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\WarehouseBranch\Create.cshtml.g.cs
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\WarehouseBranch\Edit.cshtml.g.cs
