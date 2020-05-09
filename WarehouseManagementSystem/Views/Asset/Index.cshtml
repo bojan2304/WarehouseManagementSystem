@@ -1,0 +1,75 @@
+﻿@model IEnumerable<WarehouseAssetViewModel>
+
+<h2 class="mt-5 text-center">Warehouse Branche</h2>
+
+<form method="post" class="mt-5 mr-2">
+    <div class="row form-group ">
+        <div class="col-md-2">
+            <a asp-action="Create" asp-controller="Asset" class="btn btn-primary">Create New</a>
+        </div>
+    </div>
+</form>
+
+<table class="table table-hover table-striped table-borderless mt-5 shadow p-3 mb-5 bg-white rounded table-responsive-lg table-responsive-md table-responsive-sm">
+    <thead>
+        <tr>
+            <th>
+                Img
+            </th>
+            <th>
+                Id
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Expiration
+            </th>
+            <th>
+                Warranty
+            </th>
+            <th>
+                Quantity
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var asset in Model)
+        {
+            <tr>
+                <td>
+                    <a asp-controller="Asset" asp-action="Detail" asp-route-id="@asset.Id"><img src="@asset.ImageUrl" alt="Asset Img" style="width:80px; height:100px;" /></a>
+                </td>
+                <td class="col-wrap-text pt-5">
+                    @Html.DisplayFor(modelItem => asset.Id)
+                </td>
+                <td class="col-wrap-text pt-5">
+                    @Html.DisplayFor(modelItem => asset.Name)
+                </td>
+                <td class="col-wrap-text pt-5">
+                    @Html.DisplayFor(modelItem => asset.Type)
+                </td>
+                <td class="col-wrap-text pt-5">
+                    @Html.DisplayFor(modelItem => asset.Expiration)
+                </td>
+                <td class="col-wrap-text pt-5">
+                    @Html.DisplayFor(modelItem => asset.WarrantyDate)
+                </td>
+                <td class="col-wrap-text pt-5">
+                    @Html.DisplayFor(modelItem => asset.Quantity)
+                </td>
+                <td class="d-flex justify-content-between pt-5" style="max-width:200px;">
+                    <a asp-action="Edit" asp-route-id="@asset.Id" class="btn btn-primary btn-sm sameSizeActionsBtn"><i class="fas fa-edit"></i></a>
+                    <a asp-action="Detail" asp-route-id="@asset.Id" class="btn btn-secondary btn-sm sameSizeActionsBtn"><i class="fas fa-info"></i></a>
+                    <a asp-action="Delete" asp-route-id="@asset.Id" class="btn btn-danger btn-sm sameSizeActionsBtn"><i class="fas fa-trash-alt"></i></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

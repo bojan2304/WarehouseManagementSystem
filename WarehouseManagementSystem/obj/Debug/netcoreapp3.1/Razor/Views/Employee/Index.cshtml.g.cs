@@ -40,8 +40,29 @@ using WarehouseManagementSystem.Models.WarehouseBranchViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\Views\_ViewImports.cshtml"
+using WarehouseManagementSystem.Models.StatusViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\Views\_ViewImports.cshtml"
+using WarehouseManagementSystem.Models.WarehouseAssetViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 7 "C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\Views\_ViewImports.cshtml"
+using WarehouseManagementSystem.Models.CheckoutViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"22b1576c30dcbf757919f0b19815c020080b7bd6", @"/Views/Employee/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5582b5280293b668b923b6407d1a7ba983f1f66e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d06bd5d37dc1d6e986f601bce2385ad5d4c9be15", @"/Views/_ViewImports.cshtml")]
     public class Views_Employee_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<EmployeeViewModel>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Create", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -82,9 +103,9 @@ using WarehouseManagementSystem.Models.WarehouseBranchViewModels;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\r\n<h2 class=\"mt-5 text-center\">Employees</h2>\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22b1576c30dcbf757919f0b19815c020080b7bd67659", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22b1576c30dcbf757919f0b19815c020080b7bd68377", async() => {
                 WriteLiteral("\r\n    <div class=\"row form-group \">\r\n        <div class=\"col-md-2\">\r\n            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22b1576c30dcbf757919f0b19815c020080b7bd68004", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22b1576c30dcbf757919f0b19815c020080b7bd68722", async() => {
                     WriteLiteral("Create New");
                 }
                 );
@@ -149,7 +170,7 @@ using WarehouseManagementSystem.Models.WarehouseBranchViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("            <tr>\r\n                <td>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22b1576c30dcbf757919f0b19815c020080b7bd611614", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22b1576c30dcbf757919f0b19815c020080b7bd612332", async() => {
 #nullable restore
 #line 34 "C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\Views\Employee\Index.cshtml"
                                                                                             Write(employee.FirstName);
@@ -212,7 +233,7 @@ using WarehouseManagementSystem.Models.WarehouseBranchViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n                </td>\r\n                <td class=\"d-flex justify-content-between\" style=\"max-width:200px;\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22b1576c30dcbf757919f0b19815c020080b7bd615541", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22b1576c30dcbf757919f0b19815c020080b7bd616259", async() => {
                 WriteLiteral("<i class=\"fas fa-edit\"></i>");
             }
             );
@@ -244,7 +265,7 @@ using WarehouseManagementSystem.Models.WarehouseBranchViewModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22b1576c30dcbf757919f0b19815c020080b7bd617845", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22b1576c30dcbf757919f0b19815c020080b7bd618563", async() => {
                 WriteLiteral("<i class=\"fas fa-info\"></i>");
             }
             );
@@ -276,7 +297,7 @@ using WarehouseManagementSystem.Models.WarehouseBranchViewModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22b1576c30dcbf757919f0b19815c020080b7bd620151", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22b1576c30dcbf757919f0b19815c020080b7bd620869", async() => {
                 WriteLiteral("<i class=\"fas fa-trash-alt\"></i>");
             }
             );

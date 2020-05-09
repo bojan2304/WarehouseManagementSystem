@@ -1,0 +1,184 @@
+﻿@model WarehouseAssetViewModel
+@*<h2 class="mt-5 text-center">Employee Detail</h2>
+
+    <div class="row mt-5 shadow p-3 mb-5 bg-white rounded table-responsive-lg table-responsive-md table-responsive-sm">
+        <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+            <h4>Assets Currently Checked Out</h4>
+            <div style="max-height: 500px;" class="pre-scrollable">
+                @if (@Model.CheckoutHistory.Any())
+                {
+                    @foreach (var checkout in @Model.CheckoutHistory)
+                    {
+                        <div>
+                            <div class="card border-primary mb-3 mr-3">
+                                <div class="card-header">
+                                    @checkout.WarehouseAsset.Name - (Warehouse Asset ID: @checkout.WarehouseAsset.Id)
+                                </div>
+                                <div class="card-body">
+                                    <h6>
+                                        Since: @checkout.CheckedIn
+                                    </h6>
+                                    <h6>
+                                        Due: @checkout.CheckedOut
+                                    </h6>
+                                    <h6>
+                                        Employee: @checkout.WarehouseEmployeeCard
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div>No items currently checked out.</div>
+
+                }
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <table class="table table-hover table-sm table-striped table-borderless mt-5">
+                <tr>
+                    <th class="col-wrap-text">@Html.DisplayNameFor(model => model.Id)</th>
+                    <td class="col-wrap-text">@Html.DisplayFor(model => model.Id)</td>
+                </tr>
+                <tr>
+                    <th class="col-wrap-text">@Html.DisplayNameFor(model => model.Name)</th>
+                    <td class="col-wrap-text">@Html.DisplayFor(model => model.Name)</td>
+                </tr>
+                <tr>
+                    <th class="col-wrap-text">@Html.DisplayNameFor(model => model.Type)</th>
+                    <td class="col-wrap-text">@Html.DisplayFor(model => model.Type)</td>
+                </tr>
+                <tr>
+                    <th class="col-wrap-text">@Html.DisplayNameFor(model => model.EntryDate)</th>
+                    <td class="col-wrap-text">@Html.DisplayFor(model => model.EntryDate)</td>
+                </tr>
+                <tr>
+                    <th class="col-wrap-text">@Html.DisplayNameFor(model => model.Manufacturer)</th>
+                    <td class="col-wrap-text">@Html.DisplayFor(model => model.Manufacturer)</td>
+                </tr>
+                <tr>
+                    <th class="col-wrap-text">@Html.DisplayNameFor(model => model.Expiration)</th>
+                    <td class="col-wrap-text">@Html.DisplayFor(model => model.Expiration)</td>
+                </tr>
+                <tr>
+                    <th class="col-wrap-text">@Html.DisplayNameFor(model => model.WarrantyDate)</th>
+                    <td class="col-wrap-text">@Html.DisplayFor(model => model.WarrantyDate)</td>
+                </tr>
+                <tr>
+                    <th class="col-wrap-text">@Html.DisplayNameFor(model => model.Location)</th>
+                    <td class="col-wrap-text">@Html.DisplayFor(model => model.Location)</td>
+                </tr>
+                <tr>
+                    <th class="col-wrap-text">@Html.DisplayNameFor(model => model.Quantity)</th>
+                    <td class="col-wrap-text">@Html.DisplayFor(model => model.Quantity)</td>
+                </tr>
+                <tr>
+                    <th class="col-wrap-text">@Html.DisplayNameFor(model => model.Value)</th>
+                    <td class="col-wrap-text">@Html.DisplayFor(model => model.Value)</td>
+                </tr>
+                <tr>
+                    <th class="col-wrap-text">@Html.DisplayNameFor(model => model.EmployeeName)</th>
+                    <td class="col-wrap-text">@Html.DisplayFor(model => model.EmployeeName)</td>
+                </tr>
+                <tr>
+                    <th class="col-wrap-text">@Html.DisplayNameFor(model => model.CurrentAssociatedWECard)</th>
+                    <td class="col-wrap-text">@Html.DisplayFor(model => model.CurrentAssociatedWECard)</td>
+                </tr>
+                <tr>
+                    <th class="col-wrap-text">@Html.DisplayNameFor(model => model.Status)</th>
+                    <td class="col-wrap-text">@Html.DisplayFor(model => model.Status)</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <a asp-action="Index" class="btn btn-primary">Back to List</a>
+    </div>*@
+
+<div class="container">
+    <div class="header clearfix detailHeading">
+        <h2 class="text-muted">View Asset Item</h2>
+    </div>
+
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-4">
+                <div>
+                    <img class="detailImage" src="@Model.ImageUrl" style="width:300px; height:300px;"/>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <p>@Model.Name</p>
+                <p>@Model.Manufacturer</p>
+                <p>@Model.Status</p>
+                <p>@Model.Type</p>
+                <p>Last Location: @Model.Location</p>
+                @if (Model.Status == "Checked Out")
+                {
+                    <p>Checked Out By: @Model.EmployeeName</p>
+                }
+
+                @if (@Model.Status == "Available")
+                {
+                    <p><a class="btn btn-lg btn-info" role="button" asp-controller="Asset" asp-action="Checkout" asp-route-id="@Model.Id">Check Out</a></p>
+                }
+
+                @if (@Model.Status == "Checked Out")
+                {
+                    <p><a class="btn btn-lg btn-success" role="button" asp-controller="Asset" asp-action="CheckIn" asp-route-id="@Model.Id">Check In</a></p>
+                }
+
+            </div>
+            <div class="col-md-4 detailInfo">
+                <table>
+                    <tr>
+                        <td class="itemLabel">ISBN: </td>
+                        <td class="itemValue">@Model.Expiration</td>
+                    </tr>
+                    <tr>
+                        <td class="itemLabel">Call Number: </td>
+                        <td class="itemValue">@Model.WarrantyDate</td>
+                    </tr>
+                    <tr>
+                        <td class="itemLabel">Replacement Cost: </td>
+                        <td class="itemValue">$@Model.Value</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <h4>Checkout History</h4>
+            <table class="table table-bordered table-hover table-condensed">
+                <thead>
+                    <tr>
+                        <th>Date Loaned</th>
+                        <th>Date Returned</th>
+                        <th>Card Id</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var checkout in @Model.CheckoutHistory)
+                    {
+                        <tr>
+                            <td>
+                                @checkout.CheckedOut
+                            </td>
+                            <td>
+                                @checkout.CheckedIn
+                            </td>
+                            <td>
+                                @checkout.WarehouseEmployeeCard.Id
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

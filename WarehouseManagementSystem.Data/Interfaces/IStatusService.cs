@@ -8,5 +8,7 @@ namespace WarehouseManagementSystem.Data.Interfaces
         IEnumerable<Status> GetAll();
         Status GetById(int id);
         void Add(Status status);
+        void Delete(int id);
+        void Edit(Status status);
     }
 }

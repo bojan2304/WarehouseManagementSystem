@@ -45,7 +45,7 @@ namespace WarehouseManagementSystem.Services.Providers
             Save();
         }
 
-        public void CheckOutItem(int id, int warehouseEmployeeCardId)
+        public void CheckOutItem(int id, int cardId)
         {
             if (IsCheckedOut(id)) return;
 
@@ -58,7 +58,7 @@ namespace WarehouseManagementSystem.Services.Providers
             //for same time in db
             var now = DateTime.Now;
 
-            var libraryCard = _context.WarehouseEmployeeCards.Include(c => c.Checkouts).FirstOrDefault(a => a.Id == warehouseEmployeeCardId);
+            var libraryCard = _context.WarehouseEmployeeCards.Include(c => c.Checkouts).FirstOrDefault(a => a.Id == cardId);
 
             var checkout = new Checkout
             {
@@ -97,11 +97,13 @@ namespace WarehouseManagementSystem.Services.Providers
 
         public string GetCurrentEmployee(int id)
         {
-            var checout = _context.Checkouts.Include(a => a.WarehouseAsset).Include(a => a.WarehouseEmployeeCard).Where(v => v.Id == id);
+            var checkout = _context.Checkouts.Include(a => a.WarehouseAsset).Include(a => a.WarehouseEmployeeCard).FirstOrDefault(a => a.WarehouseAsset.Id == id);
 
-            var cardId = checout.Include(a => a.WarehouseEmployeeCard).Select(a => a.WarehouseEmployeeCard.Id).FirstOrDefault();
+            if (checkout == null) return "Not checked out.";
 
-            var employee = _context.Employees.Include(p => p.WarehouseEmployeeCard).First(p => p.WarehouseEmployeeCard.Id == cardId);
+            var cardId = checkout.WarehouseEmployeeCard.Id;
+
+            var employee = _context.Employees.Include(p => p.WarehouseEmployeeCard).First(c => c.WarehouseEmployeeCard.Id == cardId);
 
             return $"{employee.FirstName} {employee.LastName}";
         }
@@ -113,7 +115,7 @@ namespace WarehouseManagementSystem.Services.Providers
 
         public int GetQuantity(int id)
         {
-            return _context.WarehouseAssets.First(a => a.Id == id).Quantity;
+            return _context.WarehouseAssets.FirstOrDefault(a => a.Id == id).Quantity;
         }
 
         public bool IsCheckedOut(int id)

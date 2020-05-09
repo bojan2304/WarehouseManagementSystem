@@ -15,6 +15,7 @@ namespace WarehouseManagementSystem.Data.Interfaces
         string GetManufacturer(int id);
         string GetExpirationDate(int id);
         string GetWarrantyDate(int id);
+        string GetEntyDate(int id);
         WarehouseBranch GetCurrentLocation(int id);
         WarehouseEmployeeCard GetWECardByAssetId(int id);
     }

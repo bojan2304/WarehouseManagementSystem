@@ -21,6 +21,19 @@ namespace WarehouseManagementSystem.Services.Providers
             Save();
         }
 
+        public void Delete(int id)
+        {
+            var status = GetById(id);
+            _context.Remove(status);
+            Save();
+        }
+
+        public void Edit(Status status)
+        {
+            _context.Update(status);
+            Save();
+        }
+
         public IEnumerable<Status> GetAll()
         {
             return _context.Statuses;

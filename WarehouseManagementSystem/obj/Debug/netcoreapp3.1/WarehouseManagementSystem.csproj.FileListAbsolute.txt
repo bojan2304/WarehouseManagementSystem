@@ -148,3 +148,9 @@ C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debu
 C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\WarehouseBranch\Detail.cshtml.g.cs
 C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\WarehouseBranch\Create.cshtml.g.cs
 C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\WarehouseBranch\Edit.cshtml.g.cs
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Status\Index.cshtml.g.cs
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Status\Edit.cshtml.g.cs
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Status\Create.cshtml.g.cs
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Asset\Index.cshtml.g.cs
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Asset\Detail.cshtml.g.cs
+C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Asset\Checkout.cshtml.g.cs

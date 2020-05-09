@@ -40,8 +40,29 @@ using WarehouseManagementSystem.Models.WarehouseBranchViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\Views\_ViewImports.cshtml"
+using WarehouseManagementSystem.Models.StatusViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\Views\_ViewImports.cshtml"
+using WarehouseManagementSystem.Models.WarehouseAssetViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 7 "C:\Users\MB\Desktop\WarehouseManagementSystem\WarehouseManagementSystem\Views\_ViewImports.cshtml"
+using WarehouseManagementSystem.Models.CheckoutViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"42bac7675b27abdcae8bc407a03b2cc5d3713671", @"/Views/WarehouseBranch/Detail.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5582b5280293b668b923b6407d1a7ba983f1f66e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d06bd5d37dc1d6e986f601bce2385ad5d4c9be15", @"/Views/_ViewImports.cshtml")]
     public class Views_WarehouseBranch_Detail : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<WarehouseBranchViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Index", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -219,7 +240,7 @@ WriteAttributeValue("", 326, Html.DisplayFor(model => model.Name), 326, 37, fals
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n            </tr>\r\n        </table>\r\n    </div>\r\n</div>\r\n<div class=\"col-md-2\">\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42bac7675b27abdcae8bc407a03b2cc5d371367111896", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42bac7675b27abdcae8bc407a03b2cc5d371367112614", async() => {
                 WriteLiteral("Back to List");
             }
             );

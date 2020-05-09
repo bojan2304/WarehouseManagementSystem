@@ -1,0 +1,50 @@
+﻿@model IEnumerable<StatusViewModel>
+
+<h2 class="mt-5 text-center">Status</h2>
+
+<form method="post" class="mt-5 mr-2">
+    <div class="row form-group ">
+        <div class="col-md-2">
+            <a asp-action="Create" asp-controller="Status" class="btn btn-primary">Create New</a>
+        </div>
+    </div>
+</form>
+
+<table class="table table-hover table-striped table-borderless mt-5 shadow p-3 mb-5 bg-white rounded table-responsive-lg table-responsive-md table-responsive-sm">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var status in Model)
+         {
+            <tr>
+                <td class="col-wrap-text">
+                    @Html.DisplayFor(modelItem => status.Id)
+                </td>
+                <td class="col-wrap-text">
+                    @Html.DisplayFor(modelItem => status.Name)
+                </td>
+                <td class="col-wrap-text">
+                    @Html.DisplayFor(modelItem => status.Description)
+                </td>
+                <td class="d-flex justify-content-between" style="max-width:200px;">
+                    <a asp-action="Edit" asp-route-id="@status.Id" class="btn btn-primary btn-sm sameSizeActionsBtn"><i class="fas fa-edit"></i></a>
+                    <a asp-action="Delete" asp-route-id="@status.Id" class="btn btn-danger btn-sm sameSizeActionsBtn"><i class="fas fa-trash-alt"></i></a>
+                </td>
+            </tr>
+         }
+    </tbody>
+</table>

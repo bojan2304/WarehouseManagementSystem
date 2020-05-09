@@ -45,6 +45,11 @@ namespace WarehouseManagementSystem.Services.Providers
             return GetById(id).Location;
         }
 
+        public string GetEntyDate(int id)
+        {
+            return GetById(id).EntryDate.ToString();
+        }
+
         public string GetExpirationDate(int id)
         {
             if (GetType(id) != "Material") return "N/A";

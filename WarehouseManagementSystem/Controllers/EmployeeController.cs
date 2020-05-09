@@ -110,16 +110,20 @@ namespace WarehouseManagementSystem.Controllers
         [HttpPost]
         public IActionResult Edit(EmployeeViewModel model)
         {
-            var employee = _employeeService.GetById(model.Id);
+            if (ModelState.IsValid)
+            {
+                var employee = _employeeService.GetById(model.Id);
 
-            employee.FirstName = model.FirstName;
-            employee.LastName = model.LastName;
-            employee.Address = model.Address;
-            employee.PhoneNumber = model.PhoneNumber;
-            employee.HomeWarehouseBranch = _warehouseBranchService.GetByName(model.HomeWarehouse);
+                employee.FirstName = model.FirstName;
+                employee.LastName = model.LastName;
+                employee.Address = model.Address;
+                employee.PhoneNumber = model.PhoneNumber;
+                employee.HomeWarehouseBranch = _warehouseBranchService.GetByName(model.HomeWarehouse);
 
-            _employeeService.Edit(employee);
-            return RedirectToAction("Index");
+                _employeeService.Edit(employee);
+                return RedirectToAction("Index");
+            }
+            return View(model);
         }
 
         //GET: Employee/Delete/{id}
