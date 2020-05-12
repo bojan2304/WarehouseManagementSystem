@@ -92,7 +92,7 @@ namespace WarehouseManagementSystem.Services.Providers
 
         public IEnumerable<CheckoutHistory> GetCheckoutHistory(int id)
         {
-            return _context.CheckoutHistories.Include(a => a.WarehouseAsset).Include(a => a.WarehouseEmployeeCard).Where(a => a.WarehouseEmployeeCard.Id == id);
+            return _context.CheckoutHistories.Include(a => a.WarehouseAsset).Include(a => a.WarehouseEmployeeCard).Where(a => a.WarehouseAsset.Id == id);
         }
 
         public string GetCurrentEmployee(int id)

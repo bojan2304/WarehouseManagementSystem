@@ -8,7 +8,8 @@ namespace WarehouseManagementSystem.Data.Interfaces
         IEnumerable<WarehouseAsset> GetAll();
         WarehouseAsset GetById(int id);
         void Add(WarehouseAsset asset);
-        //void Delete(int id);
+        void Edit(WarehouseAsset asset);
+        void Delete(int id);
         string GetType(int id);
         string GetName(int id);
         string GetSerialNumber(int id);

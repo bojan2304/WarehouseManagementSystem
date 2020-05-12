@@ -23,12 +23,18 @@ namespace WarehouseManagementSystem.Services.Providers
             Save();
         }
 
-        //public void Delete(int id)
-        //{
-        //    var asset = GetById(id);
-        //    _context.Remove(asset);
-        //    Save();
-        //}
+        public void Delete(int id)
+        {
+            var asset = GetById(id);
+            _context.Remove(asset);
+            Save();
+        }
+
+        public void Edit(WarehouseAsset asset)
+        {
+            _context.Update(asset);
+            Save();
+        }
 
         public IEnumerable<WarehouseAsset> GetAll()
         {

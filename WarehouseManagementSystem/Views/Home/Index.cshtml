@@ -5,43 +5,49 @@
 <h3 class="mt-5 text-center">Welcome to Warehouse Managment System</h3>
 
 <div class="row mt-5 justify-content-around">
-    <div class="card col-lg-3 col-md-4 col-sm-12 p-0 mr-2 mt-5">
-        <h3 class="card-header">Card header</h3>
+    <div class="card col-lg-3 col-md-4 col-sm-12 p-0 mr-2 mt-5 shadow bg-white">
+        <h3 class="card-header">Assets</h3>
         <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
+            <h5 class="card-title">Catalog of assets</h5>
         </div>
-        <img style="height: 200px; width: 100%; display: block;" src="https://images.pexels.com/photos/5909/hands-woman-girl-view.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Catalog image">
+            <a asp-action="Index" asp-controller="Asset">
+                <img style="height: 200px; width: 100%; display: block;" src="https://images.pexels.com/photos/5909/hands-woman-girl-view.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Catalog image">
+            </a>
         <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-        </div>
-    </div>
-    <div class="card col-lg-3 col-md-4 col-sm-12 p-0 mr-2 mt-5">
-        <h3 class="card-header">Card header</h3>
-        <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-        </div>
-        <img style="height: 200px; width: 100%; display: block;" src="https://images.pexels.com/photos/1543924/pexels-photo-1543924.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Catalog image">
-        <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
         <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
+            <a asp-action="Index" asp-controller="Asset" class="card-link">Assets</a>
         </div>
     </div>
-    <div class="card col-lg-3 col-md-4 col-sm-12 p-0 mr-2 mt-5">
-        <h3 class="card-header">Card header</h3>
+    <div class="card col-lg-3 col-md-4 col-sm-12 p-0 mr-2 mt-5 shadow bg-white">
+        <h3 class="card-header">Employees</h3>
         <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
+            <h5 class="card-title">List of employees</h5>
         </div>
-        <img style="height: 200px; width: 100%; display: block;" src="https://images.pexels.com/photos/209251/pexels-photo-209251.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Catalog image">
+            <a asp-action="Index" asp-controller="Employee">
+                <img style="height: 200px; width: 100%; display: block;" src="https://images.pexels.com/photos/1543924/pexels-photo-1543924.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Catalog image">
+            </a>
         <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
         <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
+            <a asp-action="Index" asp-controller="Employee" class="card-link">Employees</a>
+        </div>
+    </div>
+    <div class="card col-lg-3 col-md-4 col-sm-12 p-0 mr-2 mt-5 shadow bg-white">
+        <h3 class="card-header">Branches</h3>
+        <div class="card-body">
+            <h5 class="card-title">List of branches</h5>
+        </div>
+            <a asp-action="Index" asp-controller="WarehouseBranch">
+                <img style="height: 200px; width: 100%; display: block;" src="https://images.pexels.com/photos/209251/pexels-photo-209251.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Catalog image">
+            </a>
+        <div class="card-body">
+            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="card-body">
+            <a asp-action="Index" asp-controller="WarehouseBranch" class="card-link">Branches</a>
         </div>
     </div>
 </div>

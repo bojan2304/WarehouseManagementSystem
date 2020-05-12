@@ -42,9 +42,9 @@
     <tbody>
         @foreach (var asset in Model)
         {
-            <tr>
+            <tr class="">
                 <td>
-                    <a asp-controller="Asset" asp-action="Detail" asp-route-id="@asset.Id"><img src="@asset.ImageUrl" alt="Asset Img" style="width:80px; height:100px;" /></a>
+                    <a asp-controller="Asset" asp-action="Detail" asp-route-id="@asset.Id"><img src="@asset.ImageUrl" alt="Asset Img" style="width:80px; height:80px;" /></a>
                 </td>
                 <td class="col-wrap-text pt-5">
                     @Html.DisplayFor(modelItem => asset.Id)
